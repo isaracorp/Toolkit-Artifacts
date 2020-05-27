@@ -37,6 +37,8 @@ Poly1305 artifacts, specified with `--aad` in the AEAD samples.
 `chacha20.nonce` is a 96-bit nonce used to encrypt the ChaCha20 artifacts
 (including the AEAD ChaCha20 Poly1305 artifacts).
 
+`poly1305.key` is a 256-bit key used to MAC the Poly1305 artifacts.
+
 ### Artifact Generation
 
 * AEAD ChaCha20 Poly1305 - `anne-of-green-gables.epub` encrypted using
@@ -44,6 +46,8 @@ Poly1305 artifacts, specified with `--aad` in the AEAD samples.
   authenticated data.
 * ChaCha20 - `anne-of-green-gables.epub` encrypted using `chacha20.key`, the
   `chacha20.nonce`, and starting an initial counter of 0.
+* HSS keys were all generated using the BDS tree strategy (called the "Memory
+  Constrained" strategy since Toolkit 2.0.
 
 ## Known Issues
 
