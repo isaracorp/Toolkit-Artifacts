@@ -21,6 +21,11 @@ algorithm. For example:
 
 See individual `README.md` files inside the directories for details.
 
+The ePub version of L. M. Montgomery's
+[Anne of Green Gables](https://www.gutenberg.org/ebooks/45) in
+`anne-of-green-gables.epub` was used as a data source any time a message
+was required (for signatures, as an input to symmetrical cryptography, etc.).
+
 ## Known Issues
 
 Known interoperability issues will be documented here, along with explanations.
