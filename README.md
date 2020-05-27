@@ -21,10 +21,29 @@ algorithm. For example:
 
 See individual `README.md` files inside the directories for details.
 
+### Additional Files
+
 The ePub version of L. M. Montgomery's
 [Anne of Green Gables](https://www.gutenberg.org/ebooks/45) in
 `anne-of-green-gables.epub` was used as a data source any time a message
 was required (for signatures, as an input to symmetrical cryptography, etc.).
+
+`aead-chacha20.aad` is additional authenticated data used for the AEAD ChaCha20
+Poly1305 artifacts, specified with `--aad` in the AEAD samples.
+
+`chacha20.key` is a 256-bit key used to encrypt the ChaCha20 artifacts
+(including the AEAD ChaCha20 Poly1305 artifacts).
+
+`chacha20.nonce` is a 96-bit nonce used to encrypt the ChaCha20 artifacts
+(including the AEAD ChaCha20 Poly1305 artifacts).
+
+### Artifact Generation
+
+* AEAD ChaCha20 Poly1305 - `anne-of-green-gables.epub` encrypted using
+  `chacha20.key`, the `chacha20.nonce`, and `aead-chacha20.aad` as additional
+  authenticated data.
+* ChaCha20 - `anne-of-green-gables.epub` encrypted using `chacha20.key`, the
+  `chacha20.nonce`, and starting an initial counter of 0.
 
 ## Known Issues
 
