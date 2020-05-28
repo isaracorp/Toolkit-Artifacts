@@ -46,8 +46,15 @@ Poly1305 artifacts, specified with `--aad` in the AEAD samples.
   authenticated data.
 * ChaCha20 - `anne-of-green-gables.epub` encrypted using `chacha20.key`, the
   `chacha20.nonce`, and starting an initial counter of 0.
-* HSS keys were all generated using the BDS tree strategy (called the "Memory
-  Constrained" strategy since Toolkit 2.0.
+* Dilithium, HSS, Kyber, Rainbow, XMSS - `anne-of-green-gables.epub` used as
+  the message.
+* HSS and XMSS keys were all generated using the BDS tree strategy (called the
+  "Memory Constrained" strategy since Toolkit 2.0).
+* Poly1305 - `anne-of-green-gables.ebub` used as the message.
+
+The Diffie-Hellman-like algorithms (FrodoDH, LUKE, NewHopeDH, and SIDH) and key
+encapsulation mechanisms (Frodo KEM, McEliece QC-MDPC, NTRUPrime, and SIKE)
+don't require additional inputs.
 
 ## Known Issues
 
