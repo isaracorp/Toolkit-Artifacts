@@ -26,3 +26,7 @@ Removed variants: IIIb, IVa, VIa, VIb.
 |--------------------|-----------|
 |GF(256), 68, 36, 36 |IIIc       |
 |GF(256), 92, 48, 48 |Vc         |
+
+Note that the [Toolkit samples](https://github.com/isaracorp/Toolkit-Samples)
+for 2.0 still use the 1.5 variant names rather than the variants found in the
+Toolkit headers.
