@@ -30,3 +30,14 @@ Removed variants: IIIb, IVa, VIa, VIb.
 Note that the [Toolkit samples](https://github.com/isaracorp/Toolkit-Samples)
 for 2.0 still use the 1.5 variant names rather than the variants found in the
 Toolkit headers.
+
+## XMSS Parameter Mapping
+
+In 2.0, we redesigned the XMSS API to use variants instead of a Height
+parameter.
+
+|2.0 Variant|1.5 Height (H)|
+|-----------|--------------|
+|2e10       |10            |
+|2e16       |16            |
+|2e20       |20            |
