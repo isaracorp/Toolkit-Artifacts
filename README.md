@@ -60,6 +60,42 @@ don't require additional inputs.
 
 Known interoperability issues will be documented here, along with explanations.
 
+### 1.5 to 2.0
+
+Changes:
+
+* HSS parameters were changed from specifying Winternitz and Height to choosing
+  from optimal variants; see the [2.0 notes](2.0/README.md) for a mapping to
+  the 1.5 parameters.
+* HSS/XMSS tree strategies were renamed (and new ones added); the "BDS"
+  strategy from 1.5 is now known as "Memory Constrained" in 2.0.
+
+Incompatibilities:
+
+* NTRUPrime private keys are not compatible between 1.5 and 2.0.
+* Rainbow private keys are not compatible between 1.5 and 2.0.
+* Algorithms present in
+  [Round 2](https://csrc.nist.gov/projects/post-quantum-cryptography/round-2-submissions)
+  of the NIST Post-Quantum Cryptography competition had their variants updated
+  between 1.5 and 2.0 to match the Round 2 versions. Artifacts for these
+  algorithms are not compatible between 1.5 and 2.0.
+* FrodoDH was updated to match the FrodoKEM variants from NIST's competition.
+  Its artifacts are not compatible between 1.5 and 2.0.
+* SIDH was updated to match the SIKE variants from NIST's competition. Its
+  artifacts are not compatible between 1.5 and 2.0.
+
+New algorithms:
+
+* Samwise - An ISARA optimized variant of FrodoDH.
+* SPHINCS+ - A stateless hash-based digital signature scheme from the NIST
+  competition.
+* XMSS<sup>MT</sup> - The multi-tree version of XMSS.
+
+Removed algorithms:
+
+* LUKE - An ISARA optimized variant of NewHope.
+* McEliece QC-MDPC KEM - An ISARA designed KEM.
+
 ## License
 
 These are released under the Apache 2.0 license. See `LICENSE` for details.
