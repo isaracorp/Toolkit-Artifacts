@@ -41,3 +41,19 @@ parameter.
 |2e10       |10            |
 |2e16       |16            |
 |2e20       |20            |
+
+## XMSS<sup>MT</sup> Parameter Mapping
+
+The XMSS<sup>MT</sup> variants map to an overall height, split over a number
+of layers. The height is split evenly between the layers.
+
+|2.0 Variant|Height (H)|Layers (L)|
+|-----------|----------|----------|
+|2e20 2D    |20        |2         |
+|2e20 4D    |20        |4         |
+|2e40 2D    |40        |2         |
+|2e40 4D    |40        |4         |
+|2e40 8D    |40        |8         |
+|2e60 3D    |60        |3         |
+|2e60 6D    |60        |6         |
+|2e60 12D   |60        |12        |
