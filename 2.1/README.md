@@ -30,7 +30,7 @@ Removed variants: IIIb, IVa, VIa, VIb.
 |GF(256), 92, 48, 48 |Vc         |
 
 Note that the [Toolkit samples](https://github.com/isaracorp/Toolkit-Samples)
-for 2.0 still use the 1.5 variant names rather than the variants found in the
+for 2.1 still use the 1.5 variant names rather than the variants found in the
 Toolkit headers.
 
 ## XMSS Parameter Mapping
